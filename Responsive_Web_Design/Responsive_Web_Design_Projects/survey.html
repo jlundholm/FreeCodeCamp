@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Mars University</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto');
+
     html,
     body {
       background-color: #FFB001;
       font-family: 'Roboto', Helvetica, sans-serif;
     }
+    .labels {
+      display: inline-block;
+      text-align: right;
+      width: 40%;
+      padding: 5px;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+    .rightTab {
+      display: inline-block;
+      text-align: left;
+      width: 48%;
+      vertical-align: middle;
+    }
+    .rightTab {
+        width: 80%;
+        float: left;
+      }
+
+      .input-field {
+        width: 100%;
+      }
   </style>
 </head>
 
 <body>
-  <p>Mars University: A Giant Pulsating Mind is a Terrible Thing to Waste</p>
+  <h1 id="title">Mars University: A Giant Pulsating Mind is a Terrible Thing to Waste</h1>
+  <p id="description">How well do you know the Futurama episode Mars University</p>
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+  </form>
 </body>
 
 </html>
